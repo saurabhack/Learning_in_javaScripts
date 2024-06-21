@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #esta{
+            height: 100vh;
+            width:100vw;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+        }
+        #string{
+            height: 50vh;
+            width: 50vw;
+            border: 5px solid black;
+        }
+        .myform{
+            display: flex;
+        }
+        #button{
+            height: 10vh;
+            width: 15vw;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="esta">
+    <form  id="myform" >
+        <textarea name="" id="string" cols="20" rows="10"></textarea>
+        <br>
+        <input id="button" type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <h2 id="ans"></h2>
+</div>
+
+    
+    
+</body>
+<script>
+    let myform=document.getElementById("myform")
+    myform.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let string=document.getElementById("string");
+        let counter=string.value;
+        let data=counter.split(" ")
+        document.getElementById("ans").innerHTML=data.length;
+    })
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .boxes{
+            height: 200vh;
+            width: 95vw;
+            border:   5px red solid;
+            background-color: yellow;
+        }
+        .box{
+            margin:10px;
+            height:10vh;
+            width:10vw;
+            background-color: red;
+            display: inline-block;
+        }
+        #first{
+            position: relative;
+            left:500px;
+
+        }
+
+        #second{
+            position: sticky;
+            top:5%;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+
+        <div class="box" id="first">class 1</div>
+        <div class="box" id="second">class 2</div>
+        <div class="box" id="third">class 3</div>
+    </div>
+</body>
+</html>

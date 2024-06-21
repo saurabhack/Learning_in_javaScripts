@@ -1,0 +1,10 @@
+.name{
+    color:red;
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:line-through;
+    text-shadow: 30px 10px black;
+    font-style: italic;
+    font-weight: 100px;
+    font-variant: small-caps;
+}

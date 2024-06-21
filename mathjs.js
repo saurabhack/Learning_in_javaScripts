@@ -1,0 +1,5 @@
+console.log(Math.ceil(5.9))
+console.log(Math.round(7.9))
+console.log(Math.floor(8.9))
+console.log(Math.trunc(90.8))
+console.log(Math.sign(4))

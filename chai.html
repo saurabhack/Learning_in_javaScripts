@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function addinpara(s,element){
+        return s.appendChild(element)
+    }
+    let data=document.createElement("div")
+    let data1=document.createElement("h1")
+    let data2=document.createElement("h1")
+    let data3=document.createElement("h1")
+    let arr=[data1,data2,data3]
+    let ans=["saurabh","ankita","lata"]
+    for(let i=0;i<3;i++){
+        addinpara(data,arr[i])
+    }
+    for(let i=0;i<arr.length;i++){
+        arr[i].innerText=ans[i]
+    }
+    document.body.appendChild(data)
+
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .navbar{
+            height: 10vh;
+            width:100vw;
+            display: flex;
+            box-shadow: 2px 2px 5px gray;
+        }
+        .logo{
+            height:100%;
+            width:30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lists{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lists ul li{
+            list-style: none;
+
+        }
+        .icons{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+        }
+        .lists p:hover{
+            border-bottom: 3px  solid black;
+            transition: all ease 0s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo"><h1>Felix</h1></div>
+        <div class="lists">
+                <p>Home</p>
+                <p>Posts</p>
+                <p>about Us</p>
+                <p>Contact Us</p>
+        </div>
+        <div class="icons">
+            <div><i class="fa-brands fa-square-instagram fa-2x"></i></div>
+            <div><i class="fa-brands fa-facebook fa-2x"></i></div>
+            <div><i class="fa-brands fa-youtube fa-2x"></i></div>
+            <div><i class="fa-brands fa-twitter fa-2x"></i></div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/2bc1922da0.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .colors{
+            height: 10vh;
+            width: 100vw;
+            /* border:2px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .color{
+            height: 100%;
+            width:20%;
+            border: 2px solid black;
+            
+        }
+        #red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        #black{
+            background-color: black;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="colors">
+        <div class="color" id="red" ></div>
+        <div class="color" id="black"></div>
+        <div class="color" id="green"></div>
+        <div class="color" id="yellow"></div>
+    </div>
+    
+</body>
+<script>
+    document.querySelector("#red").addEventListener("mouseover",function(){
+        document.querySelector("body").style.backgroundColor="red"
+
+    })
+    document.querySelector("#red").addEventListener("mouseout",function(){
+        document.querySelector("body").style.backgroundColor="white"
+        
+    })
+    document.querySelector("#black").addEventListener("mouseover",function(){
+        document.querySelector("body").style.backgroundColor="black"
+    })
+    document.querySelector("#black").addEventListener("mouseout",function(){
+        
+        document.querySelector("body").style.backgroundColor="white"
+        
+    })
+    document.querySelector("#green").addEventListener("mouseover",function(){
+        document.querySelector("body").style.backgroundColor="green"
+        
+    })
+    document.querySelector("#green").addEventListener("mouseout",function(){
+        document.querySelector("body").style.backgroundColor="white"
+    })
+    document.querySelector("#yellow").addEventListener("mouseover",function(){
+        document.querySelector("body").style.backgroundColor="yellow"
+    })
+    document.querySelector("#yellow").addEventListener("mouseout",function(){
+        document.querySelector("body").style.backgroundColor="white"
+        
+    })
+</script>
+</html>

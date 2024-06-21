@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reverse(num){
+            let add=0
+            while(num!=0){
+                let rev=num%10
+                add=add*10+rev;
+                num=parseInt(num/10)
+            }
+            return add
+
+        }
+        let num=prompt("enter your number")
+        let ans=reverse(num)
+        document.write(ans)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

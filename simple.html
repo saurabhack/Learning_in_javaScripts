@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let promise=new Promise(function(resolve,reject){
+            setTimeout(() => {
+                let age=10
+            if(age>=18){
+                resolve("yess you are eligible for voting")
+            }else{
+                reject("you are not eligible for voting")
+            }
+                
+            }, );
+            
+        })
+        promise.then(function(successHandler){
+            document.write(successHandler)
+        }).catch(function(error){
+            document.write(error)
+        })
+    </script>
+</head>
+<body> 
+</body>
+</html>

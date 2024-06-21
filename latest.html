@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="lang">
+    </ul>
+</body>
+<script>
+    function addLang(language){
+        let li=document.createElement("li");
+        li.innerHTML=language;
+        document.querySelector(".lang").appendChild(li);
+    }
+    addLang("javascript")
+    addLang("python")
+    addLang("html")
+    addLang("css")
+
+    let secondLang=document.querySelector('li:nth-child(2)')
+    let newLi=document.createElement("li")
+    newLi.textContent="cpp"
+    secondLang.replaceWith(newLi)
+    let last=document.querySelector("li:last-child")
+    last.remove()
+    
+</script>
+</html>
